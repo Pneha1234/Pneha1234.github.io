@@ -264,8 +264,8 @@
             </div>
             <div class="col-lg-4 pr-lg-5">
               <h3 class="mb-4 heading-h3" id="fullName"><span class="gsap-reveal">We can make it together</span></h3>
-              <p class="lead gsap-reveal"id="">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there <a href="#">live the blind</a> texts. </p>
-              <p class="mb-4 gsap-reveal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p class="lead gsap-reveal"id="basicInfo">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there <a href="#">live the blind</a> texts. </p>
+              <p class="mb-4 gsap-reveal"id="followersSection">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
               <p class="gsap-reveal"><a href="https://drive.google.com/file/d/1gIcENdkby-O2Hj-I05hO5pAz-YFbtTCP/view?usp=sharing" class="btn btn-outline-pill btn-custom-light">View my CV</a></p>
             </div>
           </div>
@@ -518,8 +518,15 @@
               .then(response => response.json())
               .then(function (data) {
                 console.log(data)
+                let followersCount = data['followers']
+                let followingCount = data['following']
+                let organizationName = data['company']
+                let myInfo = `Hey, there I am currently working as a backend developer at ${organizationName} .I am using Python and Flask.`
+                let followersInfo = `I am being followed by ${followersCount} awesome followers and following ${followingCount} people.`
                 document.getElementById('profileImage').src = data['avatar_url']
                 document.getElementById('fullName').textContent = data['name']
+                document.getElementById('basicInfo').textContent = myInfo
+                document.getElementById('followersSection').textContent = followersInfo
               })
     </script>
   </body>
