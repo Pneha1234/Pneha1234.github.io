@@ -1,620 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="html, css, javascript, jquery">
-    <meta name="author" content="">
-
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-
-
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neha Pandey | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .header-links .resume-link {
+      background: linear-gradient(90deg, #2d6cdf 0%, #4f8cff 100%);
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 1.08em;
+      padding: 8px 22px 8px 18px;
+      margin-left: 16px;
+      border: none;
+      border-radius: 24px;
+      box-shadow: 0 2px 12px rgba(34,58,94,0.10);
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.5px;
+    }
+    .header-links .resume-link:hover {
+      background: linear-gradient(90deg, #1746a0 0%, #2d6cdf 100%);
+      box-shadow: 0 4px 18px rgba(34,58,94,0.18);
+      color: #fff !important;
+      text-decoration: none;
+      transform: translateY(-2px) scale(1.04);
+    }
+    .header-links .resume-link i {
+      color: #fff;
+      font-size: 1.15em;
+      margin-right: 2px;
+      transition: color 0.2s;
+    }
+  </style>
 </head>
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-<nav class="unslate_co--site-mobile-menu">
-    <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-            <span class="close-label">Close</span>
-            <div class="close-times">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-            </div>
-        </a>
+<body>
+  <header class="header sophisticated-header">
+    <div class="header-container">
+      <div class="profile-image">
+        <img src="images/28248104.jpeg" alt="Neha Pandey profile" />
+      </div>
+      <div class="header-main">
+        <h1>Neha Pandey</h1>
+        <p class="subtitle">Senior Software Engineer</p>
+      </div>
+      <div class="header-links">
+  <a href="mailto:nehapandey408@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  <a href="tel:+9779844298042" title="Phone"><i class="fas fa-phone"></i></a>
+  <a href="https://github.com/Pneha1234" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/neha-pandey-dev/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://medium.com/me/stories?tab=posts-published" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+  <a href="https://drive.google.com/file/d/1yKUeSk6wJWc3ajlMoTA7jpVVM09-lz4O/view?usp=drive_link" target="_blank" title="Resume" class="resume-link">
+    <i class="fas fa-file-alt"></i> Resume
+  </a>
+      </div>
     </div>
-    <div class="site-mobile-inner"></div>
-</nav>
+    <nav class="main-nav">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#reading">Bookshelf</a>
+  <a href="#papers">Papershelf</a>
+  <a href="#blog">Blogs</a>
+  <a href="#contact">Contact</a>
+    </nav>
 
+  <!-- Contact Section (moved to end of page) -->
+  </header>
 
-<div class="unslate_co--site-wrap">
-
-    <div class="unslate_co--site-inner">
-
-        <div class="lines-wrap">
-            <div class="lines-inner">
-                <div class="lines"></div>
-            </div>
+  <section id="about" class="about-summary section-padding">
+    <section id="about" class="about-summary section-padding">
+      <div class="container">
+        <div class="about-summary-card">
+          <h2>About Me</h2>
+          <p class="about-summary-text">
+            Senior Software Engineer with 5+ years of experience designing and delivering scalable backend systems and cloud-native architectures. Proven expertise in building secure APIs, optimizing distributed systems, and leading teams to deliver high-impact solutions. Skilled in AWS, Python frameworks (FastAPI, Django, Flask), and Generative AI (LLMs, prompt engineering, fine-tuning). Passionate about system design, technical excellence, and mentoring engineers.
+          </p>
         </div>
-        <!-- END lines -->
+      </div>
+    </section>
 
-        <nav class="unslate_co--site-nav site-nav-target">
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h2 style="margin-bottom: 0;">Projects</h2>
+          <a href="https://github.com/Pneha1234" target="_blank" class="btn btn-primary" style="margin-left: auto;">My GitHub Profile</a>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>AWS Kinesis Data Tools</h3>
+            <p>Python utilities and examples for scalable data streaming and analytics using AWS Kinesis.</p>
+            <a href="https://github.com/Pneha1234/Kinesis" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3>AWS Cloud Workshop</h3>
+            <p>Hands-on resources and code samples for learning AWS cloud infrastructure, automation, and DevOps best practices.</p>
+            <a href="https://github.com/Pneha1234/aws_workshop" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3>Python Interview Prep</h3>
+            <p>Curated Python interview questions and answers to help you prepare for technical interviews and coding rounds.</p>
+            <a href="https://github.com/Pneha1234/Python-Interview" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3>LeetCode Solutions</h3>
+            <p>Comprehensive solutions to popular LeetCode problems, with explanations and code for Python learners.</p>
+            <a href="https://github.com/Pneha1234/LeetCode" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="container">
+    <!-- Reading Section (Bookshelves) -->
+    <section id="reading" class="reading-section section-padding">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h2 id="bookshelves-heading" style="margin-bottom: 0;">My Bookshelves</h2>
+          <a href="https://www.goodreads.com/user/show/73015025-neha" target="_blank" class="btn btn-primary" style="margin-left: auto;">My Goodreads Profile</a>
+        </div>
+        <div class="bookshelf-grid">
+          <div class="book-card">
+            <h3>CPython Internals</h3>
+            <p>Anthony Shaw</p>
+            <a href="https://www.goodreads.com/book/show/53412684-cpython-internals" target="_blank" class="btn btn-primary">View on Goodreads</a>
+            <a href="cpython-notes.html" class="btn btn-secondary" style="margin-top:10px;" target="_blank">Notes</a>
+          </div>
+          <div class="book-card">
+            <h3>Atomic Habits</h3>
+            <p>James Clear</p>
+            <a href="https://www.goodreads.com/book/show/40121378-atomic-habits" target="_blank" class="btn btn-primary">View on Goodreads</a>
+            <a href="#" class="btn btn-secondary" style="margin-top:10px;" target="_blank">Notes</a>
+          </div>
+          <div class="book-card">
+            <h3>The Pragmatic Programmer</h3>
+            <p>Andrew Hunt, David Thomas</p>
+            <a href="https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer" target="_blank" class="btn btn-primary">View on Goodreads</a>
+            <a href="#" class="btn btn-secondary" style="margin-top:10px;" target="_blank">Notes</a>
+          </div>
+        </div>
+        <div class="bookshelf-links" style="margin-top:32px;">
+          <a href="https://www.goodreads.com/review/list/73015025?shelf=to-read" target="_blank" class="btn btn-tertiary">To Read</a>
+          <a href="https://www.goodreads.com/review/list/73015025?shelf=read" target="_blank" class="btn btn-tertiary">Read</a>
+          <a href="https://www.goodreads.com/review/list/73015025?shelf=currently-reading" target="_blank" class="btn btn-tertiary">Currently Reading</a>
+        </div>
+      </div>
+    </section>
 
-                <div class="row align-items-center justify-content-between text-left">
-                    <div class="col-md-5 text-right">
-                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                            <li class="has-children">
-                                <a href="#home-section" class="nav-link"><h3><b>Home</b></h3></a>
-                            </li>
-                            <li><a href="#portfolio-section" class="nav-link"><h3><b>My Projects</b></h3></a></li>
-                            <li><a href="#about-section" class="nav-link"><h3><b>About</b></h3></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5 text-right text-lg-left">
-                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                            <li><a href="#skills-section" class="nav-link"><h3><b>Skills</b></h3></a></li>
-                            <li><a href="#journal-section" class="nav-link"><h3><b>Journal</b></h3></a></li>
-                            <li><a href="#contact-section" class="nav-link"><h3><b>Contact</b></h3></a></li>
-                        </ul>
+    <section id="papers" class="papers-section section-padding">
+      <div class="container">
+        <h2>Papershelves</h2>
+        <div class="papershelves-section">
+          <h3 style="margin-top:32px;">Papers I Read</h3>
+          <p>Curiosity drives my reading journey—I love diving into technical papers, exploring everything from distributed databases to AI. Below are the papers that sparked new ideas, challenged my thinking, or inspired deeper exploration. I organize my notes and reflections by topic, so you can follow along or jump into what interests you most.</p>
 
-                        <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                            <li><a href="#" class="js-menu-toggle">Menu</a></li>
-                        </ul>
+          <h4>Databases & Storage Systems</h4>
+          <ul class="paper-list">
+            <li>
+              <a href="https://research.google/pubs/bigtable-a-distributed-storage-system-for-structured-data/" target="_blank">Bigtable: A Distributed Storage System for Structured Data</a>
+              | <a href="#" target="_blank">Notes</a>
+            </li>
+            <li>
+              <a href="https://research.google/pubs/f1-a-distributed-sql-database-that-scales/" target="_blank">F1: A Distributed SQL Database That Scales</a>
+              | <a href="#" target="_blank">Notes</a>
+            </li>
+            <li>
+              <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf" target="_blank">The Google File System (GFS)</a>
+              | <a href="#" target="_blank">Notes</a>
+            </li>
+          </ul>
 
-                    </div>
-                </div>
-            </div>
+          <h4>Systems & Performance</h4>
+          <ul class="paper-list">
+            <li>
+              <a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf" target="_blank">CPU/Memory Article</a>
+              | <a href="#" target="_blank">Notes</a>
+            </li>
+          </ul>
 
-        </nav>
-        <!-- END nav -->
-
-        <div class="cover-v1 jarallax" style="background-image: url('images/programming-wallpaper.jpg');"
-             id="home-section">
-            <div class="container">
-                <div class="row align-items-center">
-
-                    <div class="col-md-7 mx-auto text-center">
-                        <h2 class="subheading gsap-reveal-hero">It's canonical, "Python is a great first language",
-                            elicited, "Python is a great last language!"</h2>
-                    </div>
-
-                </div>
-            </div>
+          <h4>AI & Empathic Systems</h4>
+          <ul class="paper-list">
+            <li>
+              <a href="https://arxiv.org/abs/2106.01301" target="_blank">In praise of empathic AI</a>
+              | <a href="#" target="_blank">Notes</a>
+            </li>
+          </ul>
 
 
-            <a href="#portfolio-section" class="mouse-wrap smoothscroll">
-          <span class="mouse">
-            <span class="scroll"></span>
-          </span>
-                <span class="mouse-label">Scroll</span>
-            </a>
 
         </div>
-        <!-- END .cover-v1 -->
+      </div>
+    </section>
 
-
-        <div class="unslate_co--section" id="portfolio-section" style="margin-bottom: 30%">
-            <div class="container" id="container">
-
-
-                <div class="relative">
-                    <div class="loader-portfolio-wrap">
-                        <div class="loader-portfolio"></div>
-                    </div>
-                </div>
-                <div id="portfolio-single-holder"></div>
-
-                <div class="portfolio-wrapper">
-
-                    <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-                        <h2 class="mr-auto heading-h2"><span class="gsap-reveal">My Projects</span></h2>
-                    </div>
-
-
-                    <div id="posts" class="row gutter-isotope-item" style="position: relative; height: 1096px;">
-<!--                        <div id="first_container">-->
-<!--                            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">-->
-<!--                                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                    <div class="card-body">-->
-<!--                                        <h5 class="card-title">Dark card title</h5>-->
-<!--                                        <p class="card-text">I am first.</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2" id="second_container">-->
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">Some quick example text to build on the card title and make up-->
-<!--                                        the bulk of the card's content.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">-->
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">Some quick example text to build on the card title and make up-->
-<!--                                        the bulk of the card's content.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2" id="container_first">-->
-
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">Some quick example text to build on the card title and make up-->
-<!--                                        the bulk of the card's content.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-<!--                        </div>-->
-
-<!--                        <div class="item illustration packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">-->
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">Some quick example text to build on the card title and make up-->
-<!--                                        the bulk of the card's content.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">-->
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">I am here too.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">-->
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">Some quick example text to build on the card title and make up-->
-<!--                                        the bulk of the card's content.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">-->
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">hey I am here.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2">-->
-<!--                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
-<!--                                <div class="card-header">Header</div>-->
-<!--                                <div class="card-body">-->
-<!--                                    <h5 class="card-title">Dark card title</h5>-->
-<!--                                    <p class="card-text">Some quick example text to build on the card title and make up-->
-<!--                                        the bulk of the card's content.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                    </div>-->
-                    </div>
-                </div>
-            </div>
+    <section id="blog" class="blog-section section-padding">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h2 style="margin-bottom: 0;">Blogs</h2>
+          <a href="https://medium.com/@nehapandey408" target="_blank" class="btn btn-primary" style="margin-left: auto;">My Medium Profile</a>
         </div>
-
-        <div class="unslate_co--section" id="about-section">
-            <div class="container">
-
-                <div class="section-heading-wrap text-center mb-5">
-                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
-                    <span class="gsap-reveal">
-            <img src="images/divider.png" alt="divider" width="76">
-            </span>
-                </div>
-
-
-                <div class="row mt-5 justify-content-between">
-                    <div class="col-lg-7 mb-5 mb-lg-0">
-                        <figure class="dotted-bg gsap-reveal-img ">
-                            <img alt="Image" class="img-fluid" id="profileImage">
-                        </figure>
-                    </div>
-                    <div class="col-lg-4 pr-lg-5">
-                        <h3 class="mb-4 heading-h3" id="fullName"><span
-                                class="gsap-reveal">We can make it together</span></h3>
-                        <p class="lead gsap-reveal" id="basicInfo">Far far away, behind the word mountains, far from the
-                            countries Vokalia and Consonantia, there <a href="#">live the blind</a> texts. </p>
-                        <p class="mb-4 gsap-reveal" id="followersSection">A small river named Duden flows by their place
-                            and supplies it with the necessary regelialia. It is a paradisematic country, in which
-                            roasted parts of sentences fly into your mouth.</p>
-                        <p class="gsap-reveal"><a
-                                href="https://drive.google.com/file/d/1gIcENdkby-O2Hj-I05hO5pAz-YFbtTCP/view?usp=sharing"
-                                class="btn btn-outline-pill btn-custom-light">View my CV</a></p>
-                    </div>
-                </div>
-            </div>
+        <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 36px; margin-top: 36px;">
+          <div class="blog-card" style="background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(34,58,94,0.08); padding: 18px 16px 32px 16px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h3>CPython Interpreter: From Source Code to Execution</h3>
+            <p>A deep dive into how the CPython interpreter works, from parsing source code to executing instructions.</p>
+            <a href="https://medium.com/@nehapandey408/cpython-interpreter-from-source-code-to-execution-36f9084705e0" target="_blank" class="btn btn-primary">Read on Medium</a>
+          </div>
+          <div class="blog-card" style="background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(34,58,94,0.08); padding: 18px 16px 32px 16px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h3>Introduction to Operating Systems</h3>
+            <p>An overview of operating system concepts, architecture, and why they matter for developers.</p>
+            <a href="https://medium.com/@nehapandey408/introduction-to-operating-systems-d4138a3d1282" target="_blank" class="btn btn-primary">Read on Medium</a>
+          </div>
+          <div class="blog-card" style="background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(34,58,94,0.08); padding: 18px 16px 32px 16px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h3>Why Do We Need a Garbage Collector? A Comprehensive Explanation</h3>
+            <p>Explains the importance of garbage collection in programming languages and how it works under the hood.</p>
+            <a href="https://medium.com/@nehapandey408/why-do-we-need-a-garbage-collector-a-comprehensive-explanation-e1434d2d9765" target="_blank" class="btn btn-primary">Read on Medium</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-
-        <div class="unslate_co--section section-counter" id="skills-section">
-            <div class="container">
-                <div class="section-heading-wrap text-center mb-5">
-                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
-                    <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-                </div>
-
-
-                <div class="row pt-5">
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-                        <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="60">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                            <span class="counter-label">Python</span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                        <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="40">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                            <span class="counter-label">PostGres</span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                        <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="60">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                            <span class="counter-label">Flask</span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                        <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="40">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                            <span class="counter-label">Celery</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Contact Section (at end of page) -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-card-details">
+            <h2>Contact Me</h2>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:nehapandey408@gmail.com">nehapandey408@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+9779844298042">+977-9844298042</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/neha-pandey-dev/" target="_blank">neha-pandey-dev</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/Pneha1234" target="_blank">Pneha1234</a></li>
+            </ul>
+          </div>
+          <div class="contact-card-form">
+            <form id="contactForm">
+              <input type="email" name="sender" placeholder="Your Email" required>
+              <input type="text" name="subject" placeholder="Subject" required>
+              <textarea name="message" placeholder="Your Query" rows="3" required></textarea>
+              <button type="submit" class="btn btn-primary">Send</button>
+              <div id="contact-status"></div>
+            </form>
+          </div>
         </div>
-        <!-- END .counter -->
+      </div>
+    </section>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </section>
 
-        <!--      <div class="unslate_co&#45;&#45;section" id="journal-section">-->
-        <!--        <div class="container">-->
-        <!--          <div class="section-heading-wrap text-center mb-5">-->
-        <!--            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Journal</span></h2>-->
-        <!--            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>-->
-        <!--          </div>-->
-
-        <!--          -->
-        <!--          <div class="row gutter-v4 align-items-stretch">-->
-        <!--            <div class="col-sm-6 col-md-6 col-lg-8 blog-post-entry" data-aos="fade-up" data-aos-delay="0">-->
-
-        <!--              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">-->
-        <!--                <div class="overlay">-->
-        <!--                  <div class="portfolio-item-content">-->
-        <!--                    <h3>A Mounteering Guide For Beginners</h3>-->
-        <!--                    <p class="post-meta">By Joefrey <span class="small">&bullet;</span> 5 mins read</p>-->
-        <!--                  </div>-->
-        <!--                </div>-->
-        <!--                <img src="images/post_1.jpg" class="lazyload" alt="Image" />-->
-        <!--              </a>-->
-
-
-        <!--            </div>-->
-        <!--            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">-->
-        <!--              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">-->
-        <!--                <div class="overlay">-->
-        <!--                  <div class="portfolio-item-content">-->
-        <!--                    <h3>A Mounteering Guide For Beginners</h3>-->
-        <!--                    <p class="post-meta">By Joefrey <span class="small">&bullet;</span> 5 mins read</p>-->
-        <!--                  </div>-->
-        <!--                </div>-->
-        <!--                <img src="images/post_2.jpg" class="lazyload" alt="Image" />-->
-        <!--              </a>-->
-        <!--            </div>-->
-
-
-        <!--            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="0">-->
-
-        <!--              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">-->
-        <!--                <div class="overlay">-->
-        <!--                  <div class="portfolio-item-content">-->
-        <!--                    <h3>A Mounteering Guide For Beginners</h3>-->
-        <!--                    <p class="post-meta">By Joefrey <span class="small">&bullet;</span> 5 mins read</p>-->
-        <!--                  </div>-->
-        <!--                </div>-->
-        <!--                <img src="images/post_3.jpg" class="lazyload" alt="Image" />-->
-        <!--              </a>-->
-
-
-        <!--            </div>-->
-        <!--            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">-->
-        <!--              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">-->
-        <!--                <div class="overlay">-->
-        <!--                  <div class="portfolio-item-content">-->
-        <!--                    <h3>A Mounteering Guide For Beginners</h3>-->
-        <!--                    <p class="post-meta">By Joefrey <span class="small">&bullet;</span> 5 mins read</p>-->
-        <!--                  </div>-->
-        <!--                </div>-->
-        <!--                <img src="images/post_4.jpg" class="lazyload" alt="Image" />-->
-        <!--              </a>-->
-        <!--            </div>-->
-
-        <!--            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="200">-->
-        <!--              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">-->
-        <!--                <div class="overlay">-->
-        <!--                  <div class="portfolio-item-content">-->
-        <!--                    <h3>A Mounteering Guide For Beginners</h3>-->
-        <!--                    <p class="post-meta">By Joefrey <span class="small">&bullet;</span> 5 mins read</p>-->
-        <!--                  </div>-->
-        <!--                </div>-->
-        <!--                <img src="images/post_5.jpg" class="lazyload" alt="Image" />-->
-        <!--              </a>-->
-        <!--            </div>-->
-
-
-        <!--          </div>-->
-
-        <!--        </div>-->
-        <!--      </div>-->
-        <!-- END blog posts -->
-
-
-        <div class="unslate_co--section" id="contact-section">
-            <div class="container">
-                <div class="section-heading-wrap text-center mb-5">
-                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
-                    <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-                </div>
-
-
-                <div class="row justify-content-between">
-
-                    <div class="col-md-6">
-                        <form method="post" class="form-outline-style-v1" id="contactForm">
-                            <div class="form-group row mb-0">
-
-                                <div class="col-lg-6 form-group gsap-reveal">
-                                    <label for="name">Name</label>
-                                    <input name="name" type="text" class="form-control" id="name">
-                                </div>
-                                <div class="col-lg-6 form-group gsap-reveal">
-                                    <label for="email">Email</label>
-                                    <input name="email" type="email" class="form-control" id="email">
-                                </div>
-                                <div class="col-lg-12 form-group gsap-reveal">
-                                    <label for="message">Write your message...</label>
-                                    <textarea name="message" id="message" cols="30" rows="7"
-                                              class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row gsap-reveal">
-                                <div class="col-md-12 d-flex align-items-center">
-                                    <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3"
-                                           value="Send Message">
-                                    <span class="submitting"></span>
-                                </div>
-                            </div>
-                        </form>
-                        <div id="form-message-warning" class="mt-4"></div>
-                        <div id="form-message-success">
-                            Your message was sent, thank you!
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="contact-info-v1">
-                            <div class="gsap-reveal d-block">
-                                <span class="d-block contact-info-label">Email</span>
-                                <a href="#" class="contact-info-val">nehapandey408@gmail.com</a>
-                            </div>
-                            <div class="gsap-reveal d-block">
-                                <span class="d-block contact-info-label">Phone</span>
-                                <a href="#" class="contact-info-val">9844298042</a>
-                            </div>
-                            <div class="gsap-reveal d-block">
-                                <span class="d-block contact-info-label">Address</span>
-                                <address class="contact-info-val">Sukedhara<br> Kathmandu, Nepal</address>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div> <!-- END .unslate_co-site-inner -->
-
-    <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7">
-
-                    <div class="footer-site-logo"><a href="#">Connect Me At <span>.</span></a></div>
-
-                    <ul class="footer-site-social">
-                        <li><a href="https://www.facebook.com/profile.php?id=100008158112556" target="_blank">
-                            <img alt="Facebook" src="images/facebook2.png"
-                                 width="60" height="60"></a></li>
-                        <li><a href="#" target="_blank"> <img alt="Twitter" src="images/twitter4.png"
-                                              width="60" height="60"></a></li>
-                        <li><a href="https://github.com/Pneha1234" target="_blank"><img alt="GitHub" src="images/github6.png"
-                                                                        width="60" height="60"></a></li>
-                    </ul>
-
-                    <p class="site-copyright">
-
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                        All rights reserved
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-</div>
-
-
-<!-- Loader -->
-<div id="unslate_co--overlayer"></div>
-<div class="site-loader-wrap">
-    <div class="site-loader"></div>
-</div>
-
-<script src="js/scripts-dist.js"></script>
-<script src="js/main.js"></script>
-<script>
-    fetch("https://api.github.com/users/pneha1234")
-        .then(response => response.json())
-        .then(function (data) {
-            console.log(data)
-            let followersCount = data['followers']
-            let followingCount = data['following']
-            let organizationName = data['company']
-            let myInfo = `Hey, there I am currently working as a backend developer at ${organizationName} .I am using Python and Flask.`
-            let followersInfo = `I am being followed by ${followersCount} awesome followers and following ${followingCount} people.`
-            document.getElementById('profileImage').src = data['avatar_url']
-            document.getElementById('fullName').textContent = data['name']
-            document.getElementById('basicInfo').textContent = myInfo
-            document.getElementById('followersSection').textContent = followersInfo
-        })
-    let repos_name = [];
-    let repos_link = [];
-    let repos_description = [];
-    fetch("https://api.github.com/users/pneha1234/repos?page=1&per_page=100")
-        .then(response => response.json())
-        .then(function (data) {
-            const app = document.getElementById('posts')
-            let super_main_div = document.createElement('div');
-            super_main_div.className ="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2";
-            for (let i = 0; i<=2; i++) {
-
-                let main_div = document.createElement('div');
-                main_div.className = 'card text-white bg-dark mb-3';
-                main_div.style = "max-width: 18rem;";
-
-                let inner_div = document.createElement('div');
-                inner_div.className = "card-body";
-
-                let header = document.createElement('h5');
-                let a = document.createElement('a');
-                a.href = data[i]['html_url'];
-                a.target = '_blank';
-                let rname = document.createTextNode(data[i]['name']);
-                rname.color='blue';
-                let description = document.createElement('p');
-                let paragraph_text = document.createTextNode(data[i]['description']);
-                a.appendChild(rname);
-                description.appendChild(paragraph_text);
-                header.appendChild(a);
-                inner_div.appendChild(header);
-                inner_div.appendChild(description);
-                main_div.appendChild(inner_div);
-                super_main_div.appendChild(main_div);
-                app.appendChild(super_main_div);
-            }
-            let second_super_main_div = document.createElement('div');
-            super_main_div.className ="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2" ;
-            super_main_div.style ="margin-left:40px;"
-            for (let i = 3; i<=5; i++) {
-
-                let main_div = document.createElement('div');
-                main_div.className = 'card text-white bg-dark mb-3';
-                main_div.style = "max-width: 18rem;";
-
-                let inner_div = document.createElement('div');
-                inner_div.className = "card-body";
-
-                let header = document.createElement('h5');
-                let a = document.createElement('a');
-                a.href = data[i]['html_url'];
-                a.target = '_blank';
-                let rname = document.createTextNode(data[i]['name']);
-                rname.color='white';
-                let description = document.createElement('p');
-                let paragraph_text = document.createTextNode(data[i]['description']);
-                a.appendChild(rname);
-                description.appendChild(paragraph_text);
-                header.appendChild(a);
-                inner_div.appendChild(header);
-                inner_div.appendChild(description);
-                main_div.appendChild(inner_div);
-                second_super_main_div.appendChild(main_div);
-                app.appendChild(second_super_main_div);
-            }
-            let third_super_main_div = document.createElement('div');
-            third_super_main_div.className ="item illustration packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2";
-            third_super_main_div.style ="margin-left:60px;"
-            for (let i = 6; i<=8; i++) {
-
-                let main_div = document.createElement('div');
-                main_div.className = 'card text-white bg-dark mb-3';
-                main_div.style = "max-width: 18rem;";
-
-                let inner_div = document.createElement('div');
-                inner_div.className = "card-body";
-
-                let header = document.createElement('h5');
-                let a = document.createElement('a');
-                a.href = data[i]['html_url'];
-                a.target = '_blank';
-                let rname = document.createTextNode(data[i]['name']);
-                rname.color='white';
-                let description = document.createElement('p');
-                let paragraph_text = document.createTextNode(data[i]['description']);
-                a.appendChild(rname);
-                description.appendChild(paragraph_text);
-                header.appendChild(a);
-                inner_div.appendChild(header);
-                inner_div.appendChild(description);
-                main_div.appendChild(inner_div);
-                third_super_main_div.appendChild(main_div);
-                app.appendChild(third_super_main_div);
-            }
-        })
-
-</script>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Neha Pandey. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
